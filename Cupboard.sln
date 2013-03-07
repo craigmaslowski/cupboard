@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cupboard", "Cupboard\Cupboard.csproj", "{78FA77DA-CF58-4912-9702-A59EB6BD426F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cupboard.Test", "Cupboard.Test\Cupboard.Test.csproj", "{00789179-0F63-4340-A65C-F57BC5A1ABEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78FA77DA-CF58-4912-9702-A59EB6BD426F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78FA77DA-CF58-4912-9702-A59EB6BD426F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78FA77DA-CF58-4912-9702-A59EB6BD426F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78FA77DA-CF58-4912-9702-A59EB6BD426F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00789179-0F63-4340-A65C-F57BC5A1ABEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00789179-0F63-4340-A65C-F57BC5A1ABEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00789179-0F63-4340-A65C-F57BC5A1ABEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00789179-0F63-4340-A65C-F57BC5A1ABEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
