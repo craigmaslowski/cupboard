@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>cupboard</id>
+    <title>Cupboard</title>
+    <version>0.1.0.20130307</version>
+    <authors>Craig Maslowski</authors>
+    <owners>Craig Maslowski</owners>
+    <summary>Makes managing client side templates easy for Asp.net projectes</summary>
+    <description>Cupboard is a post build tool for making it easy to manage client side templates during the development process, yet easily have them available in JavaScript. It lets you manage your client side templates as individual files, then builds a JavaScript file that can be used on the client side.</description>
+    <projectUrl>https://github.com/craigmaslowski/cupboard</projectUrl>
+    <tags>asp.net javascript templates</tags>
+    <licenseUrl>http://www.myapp.tld/license.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance> <!-- or true if you require the user to accept the License before installing -->
+    <iconUrl></iconUrl>
+  </metadata>
+</package>
