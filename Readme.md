@@ -1,6 +1,6 @@
 # Cupboard
 
-Cupboard is a post build tool for making it easy to manage client side templates during the development process, yet easily have them available in JavaScript. It lets you manage your client side templates as individual files, then builds a JavaScript file that can be used on the client side. 
+Cupboard is a post build tool for making it simple to manage client side templates during the development process, yet still easily have them available in JavaScript. Manage your client side templates as individual files, then use Cupboard to generate a JavaScript file that can be used in your client side scripts. 
 
 Imagine the following directory structure with each html file containing an individual template.
 
