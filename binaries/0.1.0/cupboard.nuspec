@@ -11,7 +11,6 @@
     <projectUrl>https://github.com/craigmaslowski/cupboard</projectUrl>
     <tags>asp.net javascript templates</tags>
     <licenseUrl>http://www.myapp.tld/license.txt</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance> <!-- or true if you require the user to accept the License before installing -->
-    <iconUrl></iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>
 </package>
