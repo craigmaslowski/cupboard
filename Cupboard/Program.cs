@@ -26,7 +26,7 @@ namespace Cupboard
 		public string Variable { get; set; }
 		
 		[Option('c', "compile", DefaultValue = true,
-		  HelpText = "Compile underscore templates to functions. Default: false")]
+		  HelpText = "Wrap contents of template files with call to _.template(). Default: false")]
 		public bool Compile { get; set; }
 
 		[ParserState]
