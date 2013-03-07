@@ -44,6 +44,16 @@ For example:
 	detail: _.template('The contents of users/detail.html')
 ```
 
+# Installation
+
+[Download version 0.1.0 as a zip file](https://github.com/craigmaslowski/cupboard/blob/master/binaries/0.1.0/Cupboard.0.1.0.zip?raw=true) 
+
+Or install with Chocolatey:
+
+```
+cinst cupboard
+```
+
 # Usage
 
 Add a post build event to your Web project similar to the following. Be sure to replace the source and destination parameter with the appropriate paths. Also make sure that the folder where cupboard.exe is located is in your path, or provide an absolute path to it.

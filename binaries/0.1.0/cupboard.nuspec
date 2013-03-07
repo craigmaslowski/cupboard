@@ -10,7 +10,7 @@
     <description>Cupboard is a post build tool for making it easy to manage client side templates during the development process, yet easily have them available in JavaScript. It lets you manage your client side templates as individual files, then builds a JavaScript file that can be used on the client side.</description>
     <projectUrl>https://github.com/craigmaslowski/cupboard</projectUrl>
     <tags>asp.net javascript templates</tags>
-    <licenseUrl>http://www.myapp.tld/license.txt</licenseUrl>
+    <licenseUrl>https://raw.github.com/craigmaslowski/cupboard/master/License</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>
 </package>
