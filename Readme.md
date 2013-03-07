@@ -58,7 +58,7 @@ cinst cupboard
 
 Cupboard is meant to be run from the command line.
 
-# Command Line Options
+## Command Line Options
 
 * -s, -source : The location of the templates folder. This is a **required parameter**.
 * -d, -destination : Final destination of the compiled template file. This is a **required parameter**.
