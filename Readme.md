@@ -54,8 +54,8 @@ cupboard.exe -s $(ProjectDir)ClientSideTemplates -d  $(ProjectDir)Content\Script
 
 # Command Line Options
 
-* -s, -source : The location of the templates folder. This is a required parameter.
-* -d, -destination : Final destination of the compiled template file.
+* -s, -source : The location of the templates folder. This is a **required parameter**.
+* -d, -destination : Final destination of the compiled template file. This is a **required parameter**.
 * -e, -extension : File extension used for templates. Default: html
 * -v, -variable : Name of JavaScript variable that stores the template hash. Default: templates
 * -c, -compile : Wrap contents of template files with call to _.template(). Default: false
