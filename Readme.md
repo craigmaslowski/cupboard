@@ -58,6 +58,10 @@ cinst cupboard
 
 Cupboard is meant to be run from the command line.
 
+```
+cupboard.exe -s C:\MyApp\ClientSideTemplates -d  C:\MyApp\Content\Scripts\templates.js
+```
+
 ## Command Line Options
 
 * -s, -source : The location of the templates folder. This is a **required parameter**.
@@ -66,9 +70,6 @@ Cupboard is meant to be run from the command line.
 * -v, -variable : Name of JavaScript variable that stores the template hash. Default: templates
 * -c, -compile : Wrap contents of template files with call to _.template(). Default: false
 
-```
-cupboard.exe -s C:\MyApp\ClientSideTemplates -d  C:\MyApp\Content\Scripts\templates.js
-```
 
 To run Cupboard automatically when you build within Visual Studio, add a post build event to your Web project similar to the following. Be sure to replace the source and destination parameter with the appropriate paths. Also make sure that the folder where cupboard.exe is located is in your path, or provide an absolute path to it.
 
