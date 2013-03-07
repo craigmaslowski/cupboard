@@ -14,7 +14,7 @@ namespace Cupboard
 		public string Source { get; set; }
 
 		[Option('d', "destination", Required = true,
-		  HelpText = "Final destination of the compile template file.")]
+		  HelpText = "Final destination of the compiled template file.")]
 		public string Destination { get; set; }
 
 		[Option('e', "extension", DefaultValue = "html",
@@ -25,7 +25,7 @@ namespace Cupboard
 		  HelpText = "Name of JavaScript variable that stores the template hash. Default: templates")]
 		public string Variable { get; set; }
 		
-		[Option('c', "compile", DefaultValue = false,
+		[Option('c', "compile", DefaultValue = true,
 		  HelpText = "Compile underscore templates to functions. Default: false")]
 		public bool Compile { get; set; }
 
@@ -48,7 +48,7 @@ namespace Cupboard
 			{
 				var templates = string.Format("var {0} = {1};", 
 					options.Variable, 
-					ProcessDirectory(options.Source, options.Extension, false));
+					ProcessDirectory(options.Source, options.Extension, options.Compile, false));
 
 				try
 				{
@@ -67,7 +67,7 @@ namespace Cupboard
 			//Console.ReadLine();
 		}
 
-		static string ProcessDirectory(string directory, string extension, bool addTrailingComma)
+		static string ProcessDirectory(string directory, string extension, bool compileWithUnderscore, bool addTrailingComma)
 		{
 			//var templates = new Dictionary<string, object>();
 			var directories = Directory.GetDirectories(directory);
@@ -82,6 +82,7 @@ namespace Cupboard
 			for (var i = 0; i < files.Length; i++)
 			{
 				const string propertyPattern = "\"{0}\":\"{1}\"";
+				const string compiledPropertyPattern = "\"{0}\":_.template(\"{1}\")";
 
 				if (Path.GetExtension(files[i]) != "." + extension) continue;
 				
@@ -92,7 +93,8 @@ namespace Cupboard
 				{
 					using (var sr = new StreamReader(files[i]))
 					{
-						template += string.Format(propertyPattern, propName, sr.ReadToEnd());
+						template += string.Format((compileWithUnderscore ? compiledPropertyPattern : propertyPattern), 
+							propName, sr.ReadToEnd());
 					}
 				}
 				catch (Exception e)
@@ -117,7 +119,7 @@ namespace Cupboard
 					template += string.Format(
 						propertyPattern, 
 						propertyName,
-						ProcessDirectory(directories[i], extension, (i != directories.Length - 1))
+						ProcessDirectory(directories[i], extension, compileWithUnderscore, (i != directories.Length - 1))
 					);
 				}
 			}
